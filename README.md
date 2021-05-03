@@ -3,7 +3,8 @@ Intractiv challenge
 
 
 swagger: '2.0' 
-info: 
+
+info:
   version: v2 
   title: User and Password 
 basePath: "/" 
