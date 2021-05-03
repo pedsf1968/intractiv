@@ -59,4 +59,9 @@ public class UserServiceImpl implements UserService{
    public String encryptPassword(String rawPassword) {
       return bCryptPasswordEncoder.encode(rawPassword);
    }
+
+   @Override
+   public Boolean matches(String rawPassword, String password) {
+      return bCryptPasswordEncoder.matches(rawPassword, password);
+   }
 }

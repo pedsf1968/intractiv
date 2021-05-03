@@ -8,13 +8,17 @@ public class Compliance {
    private static final Pattern upperCaseRegex = Pattern.compile("^(?=.*[A-Z]).+$");
 
    public static final String MESSAGE_PASSWORD_OK = "Password is OK!";
+   public static final String MESSAGE_USER_FOUND = "User exists!";
+   public static final String MESSAGE_USER_CREATED = "User created!";
    public static final String ERROR_INVALID = "Invalid password!";
+   public static final String ERROR_USER_NULL = "User can not be NULL!";
+   public static final String ERROR_USER_EXISTS = "User already exist!";
+   public static final String ERROR_USER_NOTFOUND ="User not found!";
    public static final String ERROR_NULL = "Password can not be NULL!";
    public static final String ERROR_LENGTH ="Password must have at least 8 characters!";
    public static final String ERROR_DIGIT ="Password must have at least 1 digit!";
    public static final String ERROR_SPECIAL_CHAR ="Password must have at least 1 special character!";
    public static final String ERROR_UPPERCASE ="Password must have at least 1 uppercase letter!";
-   public static final String ERROR_USER_NOTFOUND ="User not found!";
 
    private Boolean isValid;
    private String reason;

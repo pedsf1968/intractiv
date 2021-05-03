@@ -1,7 +1,6 @@
 # intractiv
 Intractiv challenge
 
-
 swagger: '2.0' 
 
 info:

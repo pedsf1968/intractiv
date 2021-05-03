@@ -14,4 +14,5 @@ public interface UserService {
    UserDTO save(UserDTO userDTO);
 
    String encryptPassword(String password);
+   Boolean matches(String rawPassword, String password);
 }
