@@ -11,12 +11,11 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService{
 
    private final UserRepository userRepository;
-   private final ModelMapper mapper;
    private final BCryptPasswordEncoder bCryptPasswordEncoder;
+   private final ModelMapper mapper = new ModelMapper();
 
-   public UserServiceImpl(UserRepository userRepository, ModelMapper mapper, BCryptPasswordEncoder bCryptPasswordEncoder) {
+   public UserServiceImpl(UserRepository userRepository, BCryptPasswordEncoder bCryptPasswordEncoder) {
       this.userRepository = userRepository;
-      this.mapper = mapper;
       this.bCryptPasswordEncoder = bCryptPasswordEncoder;
    }
 
